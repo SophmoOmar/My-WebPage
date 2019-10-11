@@ -1,0 +1,50 @@
+
+main{
+  color: #4b2bff;
+
+}
+ body {
+   font-family: fantasy;
+   color: #797979;
+   background: #1c1c1c;
+ }
+
+ li{
+   color: #0092E0;
+ background-color: #303030;
+ padding: 20px;
+ margin: 10px;
+ }
+ h1,h2,h3,h4,h5{
+   color: #9500ff;
+
+ }
+ nav{
+   display: inline-block;
+ }
+ footer{
+   color: Black;
+   border: 100px;
+   background-color: gray;
+ }
+
+ ul{
+   list-style-type: none;
+   padding: 0px;
+   margin: 0px;
+   width: 200px;
+ }
+ li a{
+   display: block;
+
+   text-align: center;
+   text-decoration: none;
+   padding: 8px,16px,
+   }
+   li:hover{
+     background-color: #4b2bff;
+     color: white;
+   }
+   nav{
+     color: #4b2bff;
+   }
