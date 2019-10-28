@@ -1,50 +1,101 @@
 
-main{
-  color: #4b2bff;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900|Teko&display=swap');
+
+:root{
+  --Headsandnav:'Montserrat', sans-serif;
+  --Paragraphsandfooters:'Teko', sans-serif;
+  --gray:#797979,gray;
+  --blue:#0092E0;
+  --purple:#4b2bff,purple;
+  --darkgray: #303030,darkgray;
+}
+*{
+  text-transform: capitalize;
+  margin:0;
+  padding:0;
 
 }
- body {
-   font-family: fantasy;
-   color: #797979;
-   background: #1c1c1c;
- }
+body{
+  font-family: var(--Paragraphsandfooters);
+ color: var(--gray);
+ background: #1c1c1c;
+ margin-left: 5px;
+}
+h1>img{
+padding-left: 600px;
+}
 
- li{
-   color: #0092E0;
- background-color: #303030;
- padding: 20px;
- margin: 10px;
- }
- h1,h2,h3,h4,h5{
-   color: #9500ff;
+main{
+  color: var(--purple);
+}
 
- }
- nav{
-   display: inline-block;
- }
- footer{
-   color: Black;
-   border: 100px;
-   background-color: gray;
- }
+nav{
+  font-family: var(--Headsandnav);
+}
 
- ul{
-   list-style-type: none;
-   padding: 0px;
-   margin: 0px;
-   width: 200px;
- }
- li a{
-   display: block;
+nav ul{
+  display: inline;
+}
+ol{
+  list-style-type: none;
+}
 
+ul{
+  list-style-type: none;
+ padding: 10px;
+ margin: 0px;
+ width: 200px;
+ overflow: hidden;
+}
+
+li{
+  color: var(--blue);
+ background-color: var(--darkgray);
+ padding: 1px;
+margin-left: 8px;
+margin-right: 10px;
+ margin-bottom: 2px;
    text-align: center;
-   text-decoration: none;
-   padding: 8px,16px,
-   }
-   li:hover{
-     background-color: #4b2bff;
-     color: white;
-   }
-   nav{
-     color: #4b2bff;
-   }
+   background: -moz-linear-gradient(-45deg, #797979 0%, #494949 34%, #303030 100%);
+background: -webkit-linear-gradient(-45deg, #797979 0%, #494949 34%, #303030 100%);
+background: linear-gradient(135deg, #797979 0%, #494949 34%, #303030 100%);
+
+
+}
+li a{
+  display:block;
+  text-decoration: none;
+  color: var(--purple);
+}
+li:hover a{
+  color: white;
+  justify-content: flex-start;
+}
+li:hover {
+  background: var(--darkgray);
+  color: white;
+}
+h1,h2,h3,h4,h5,h6{
+  color: var(--purple);
+  font-family:var(--Headsandnav);
+  font-size: 25px;
+
+
+}
+p{
+  font-size: 20px;
+  margin: 5px;
+
+}
+footer{
+  color: Black;
+  border: 100px;
+  background-color: gray;
+}
+
+.moveitems{
+
+}
+.hidden{
+
+}
