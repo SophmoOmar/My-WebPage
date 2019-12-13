@@ -5,10 +5,12 @@
   --Headsandnav:'Montserrat', sans-serif;
   --Paragraphsandfooters:'Teko', sans-serif;
 }
-.topcolor section{
-  display: block;
-  background: #170063;
-margin: 200px;
+
+.topcolor{
+display: flex;
+justify-content: center;
+align-items: center;
+
 
 }
 *{
@@ -19,23 +21,26 @@ margin: 200px;
 
 }
 
+
 body{
   font-family: var(--Paragraphsandfooters);
- color:  #2919a6;
+ color:#2919a6;
  background: white;
 margin:150px;
 margin-top: 0px;
 margin-bottom: 0px;
+  transition: margin 1.5s;
 }
 
-main{
+Main{
+
 
 
 }
 
 nav{
   font-family: var(--Headsandnav);
-grid
+
 }
 
 nav ul{
@@ -54,19 +59,26 @@ ul{
 
 }
 .diff:nth-child(even){
+  display: block;
   background:#828282;
   color:#d6ceed;
+  transition: 1s;
+
 }
 .diff:nth-child(odd){
+  display:block;
   background:#bfbfbf;
   color: #695a91;
+  transition: 1s;
   }
 
 .diff{
+
   color: white;
    text-align: center;
 }
 .diff a{
+  display: block;
   text-decoration: none;
   color: white;
 }
@@ -78,6 +90,11 @@ ul{
 .diff:hover {
   color: white;
   background:#170063;
+  transition: 1s
+}
+.diff:hover img{
+  opacity: 0.5;
+  filter: opacity=50;
 }
 h2,h3,h4,h5,h6{
   color:  #2919a6;
@@ -94,6 +111,33 @@ p{
   font-size: 20px;
   margin: 5px;
 }
+@media only screen and (max-width:800px) {
+  body{
+
+  margin:30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  transition: margin 1.5s;
+  }
+}
+
+@media only screen and (max-width:600px) {
+
+
+  li img{
+    margin:auto;
+    width: 50%;
+    height:auto;
+    transition: 1s
+
+
+}
+}
+li img {
+  transition: 1s
+
+}
+
 #footer{
   border: 100px;
   background-color: gray;
@@ -106,7 +150,21 @@ p{
 .top-bottom{
 background-color:#bfbfbf;
 
+
 }
 .Page1{
 
+}
+.Sub .diff{
+  background: #004e8a;
+  transition: 1s;
+}
+.Sub .diff a{
+  color:gray;
+
+}
+.Sub .diff :hover{
+  background:#170063 ;
+color: white;
+transition: 1s;
 }
